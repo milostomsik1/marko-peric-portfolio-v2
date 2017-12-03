@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 html {
@@ -92,7 +93,7 @@ a {
 #hamburger:checked ~ .hamburger {
   position: fixed;
   right: 0;
-  @media (min-width: 634px) and (max-width: 767px) {
+  @media (min-width: 575px) and (max-width: 767px) {
     right: calc((100% - 540px) / 2);
   }
 
