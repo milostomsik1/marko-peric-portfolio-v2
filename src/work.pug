@@ -1,0 +1,84 @@
+doctype html
+html(lang="en")
+head
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+	meta(name="description", content="Marko Perić portfolio")
+	meta(name="keywords", content="portfolio, Marko, Perić, about, work")
+	meta(name="author", content="Miloš Tomšik")
+
+	title Marko Perić | Work
+
+	link(rel="stylesheet", href="css/main.css")
+
+body
+	.container-fluid.work-wrapper
+		.container.work
+			header.header.row
+				a.work__logo.bonus-left-padding(href="/index.html")
+					img.work__logo(src="./img/logo.png")
+				input#hamburger.hidden-xs-up(type="checkbox")
+				label.hamburger.hidden-md-up(for="hamburger")
+				label.hamburger__menu
+					a.work__logo.hamburger-padding-logo(href="/index.html")
+						img.work__logo(src="./img/logo.png")
+					div.hamburger__menu-items
+						a.hamburger__menu-item(href="/index.html") Home
+						a.hamburger__menu-item(href="/about.html") About
+						a.hamburger__menu-item(href="#").active Work
+						a.hamburger__menu-item(href="/contact.html") Contact
+					footer.footer.row.hamburger-padding-copyright
+						span.work__copyright.col © 2018 Marko Peric
+
+				nav.nav.col.hidden-sm-down
+					a(href="/about.html").nav-item About
+					a(href="#").nav-item.active Work
+					a(href="/contact.html").nav-item Contact
+			.row
+				.col
+					h1.work__headline Selected projects
+					h2.work__subtitle I work with 
+						span.colored clients 
+						| around the world to build amazing apps, products and services.
+
+			.row
+				.col-md-6.col-sm-12.col-xs-12
+					a.work__project(href="#", target="_blank")
+						img.work__project(src="./img/work/art-of-cars.png", alt="Art of Cars")
+				.col-md-6.col-sm-12.col-xs-12
+					a.work__project(href="#", target="_blank")
+						img.work__project(src="./img/work/ricardo.ch.png", alt="ricardo.ch")
+				.col-md-6.col-sm-12.col-xs-12
+					a.work__project(href="#", target="_blank")
+						img.work__project(src="./img/work/d&s-cars.png", alt="D&S Cars")
+				.col-md-6.col-sm-12.col-xs-12
+					a.work__project(href="#", target="_blank")
+						img.work__project(src="./img/work/dib.png", alt="DIB")
+				.col-md-6.col-sm-12.col-xs-12
+					a.work__project(href="https://www.behance.net/gallery/51840439/TDI-Radio-App-Redesign", target="_blank")
+						img.work__project(src="./img/work/tdi.png", alt="TDI Radio")
+				.col-md-6.col-sm-12.col-xs-12
+					a.work__project(href="https://www.behance.net/gallery/48710691/Lookback-Records-App-Concept", target="_blank")
+						img.work__project(src="./img/work/lookback-app.png", alt="Lookback app")
+				.col-md-6.col-sm-12.col-xs-12
+					a.work__project(href="https://dribbble.com/marckoperic/projects/529766-DailyUI-Challenge", target="_blank")
+						img.work__project(src="./img/work/daily-ui-challenge.png", alt="Daily UI challenge")
+				.col-md-6.col-sm-12.col-xs-12
+					a.work__project(href="#", target="_blank")
+						img.work__project(src="./img/work/marck1-brand.png", alt="marck1 brand")
+				.col-md-6.col-sm-12.col-xs-12
+					a.work__project(href="#", target="_blank")
+						img.work__project(src="./img/work/lookback-brand.png", alt="lookback brand")
+
+			footer.footer.row
+				.work__links.col
+					a(href="https://dribbble.com/marckoperic", target="_blank").work__link-item Dribbble
+					span.work__link-separator -
+					a(href="https://www.instagram.com/marckonedesign/", target="_blank").work__link-item Instagram
+					span.work__link-separator -
+					a(href="https://www.linkedin.com/in/marckoperic/", target="_blank").work__link-item Linkedin
+					span.work__link-separator.hidden-sm-down -
+					a(href="https://github.com/marckoperic", target="_blank").work__link-item.hidden-sm-down GitHub
+					span.work__link-separator.hidden-sm-down -
+					a(href="mailto:marcko.peric@gmail.com", target="_blank").work__link-item.hidden-sm-down Email
+				span.work__copyright.col © 2018 Marko Peric

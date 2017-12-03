@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: $base;
+  font-family: 'Lato', Helvetica, serif;
+  font-size: 1.6rem;
+}
+
+a {
+  color: $base;
+  text-decoration: none !important;
+}
+
+
+//------------------------------
+// HELPER CLASSES
+//------------------------------
+.colored {
+  color: $primary !important;
+}
+
+.active {
+  @extend .colored;
+  font-weight: 900;
+}
+
+
+//------------------------------
+// HAMBURGER MENU
+//------------------------------
+.hamburger {
+  position: relative;
+  z-index: 999;
+
+  display: flex;
+  margin-right: 1.5rem;
+  width: 24px;
+  height: 24px;
+
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  cursor: pointer;
+  border-bottom: 3px solid $base;
+
+  transition: 0.3s all;
+
+  &::before {
+    content: "";
+
+    display: block;
+    margin-top: 12px;
+    width: 100%;
+
+    border-bottom: 3px solid $base;
+
+    transition: 0.3s all;
+  }
+
+  &::after {
+    content: "";
+
+    display: block;
+    margin-top: -12px;
+    width: 100%;
+
+    border-bottom: 3px solid $base;
+
+    transition: 0.3s all;
+  }
+
+  &:hover,
+  &:hover:before,
+  &:hover:after {
+    border-color: $primary;
+    transition: 0.3s all;
+  }
+}
+
+#hamburger:checked ~ .hamburger__menu {
+  display: flex;
+}
+
+#hamburger:checked ~ .hamburger {
+  position: fixed;
+  right: 0;
+  @media (min-width: 634px) and (max-width: 767px) {
+    right: calc((100% - 540px) / 2);
+  }
+
+  border-bottom: none;
+  transform: rotate(45deg);
+  transition: 0.3s all;
+
+  &::after {
+    transform: translateY(9px) rotate(-90deg);
+    transition: 0.3s all;
+  }
+}
+
+.hamburger__menu {
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+
+  display: none;
+  min-height: 100vh;
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  background-color: $secondary;
+  background-image: url('../img/pattern.png');
+}
+
+.bonus-left-padding {
+  @media (max-width: 767px) {
+    padding-left: 39px;
+  }
+}
+
+.hamburger-padding-logo {
+  padding-top: 3.9rem;
+}
+
+.hamburger-padding-copyright {
+  padding-top: 0 !important;
+  padding-bottom: 7.2rem !important;
+}
+
+.hamburger__menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hamburger__menu-item {
+  font-family: "Playfair Display", Helvetica, sans-serif;
+  font-size: 4.8rem;
+  color: $base;
+  font-weight: 900;
+
+  &:hover,
+  &:active {
+    color: $primary !important;
+  }
+
+  &:visited {
+    color: $base;
+  }
+}

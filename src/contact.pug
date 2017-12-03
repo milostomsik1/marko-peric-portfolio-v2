@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+head
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+	meta(name="description", content="Marko Perić portfolio")
+	meta(name="keywords", content="portfolio, Marko, Perić, about, work")
+	meta(name="author", content="Miloš Tomšik")
+
+	title Marko Perić | Contact
+
+	link(rel="stylesheet", href="css/main.css")
+
+body
+	.container-fluid.contact-wrapper
+		.container.contact
+			header.header.row
+				a.contact__logo.bonus-left-padding(href="/index.html")
+					img.contact__logo(src="./img/logo.png")
+				input#hamburger.hidden-xs-up(type="checkbox")
+				label.hamburger.hidden-md-up(for="hamburger")
+				label.hamburger__menu
+					a.contact__logo.hamburger-padding-logo(href="/index.html")
+						img.contact__logo(src="./img/logo.png")
+					div.hamburger__menu-items
+						a.hamburger__menu-item(href="/index.html") Home
+						a.hamburger__menu-item(href="/about.html") About
+						a.hamburger__menu-item(href="/work.html") Work
+						a.hamburger__menu-item(href="#").active Contact
+					footer.footer.row.hamburger-padding-copyright
+						span.contact__copyright.col © 2018 Marko Peric
+
+			.row
+				h1.contact__headline.col Interested in working with me?
+					br
+					| Or just want to say ‘Hello’?
+					br
+					span.colored marko.peric@
+						wbr
+						| gmail.com
+			footer.footer.row
+				.contact__links.col
+					a(href="https://dribbble.com/marckoperic", target="_blank").contact__link-item Dribbble
+					span.contact__link-separator -
+					a(href="https://www.instagram.com/marckonedesign/", target="_blank").contact__link-item Instagram
+					span.contact__link-separator -
+					a(href="https://www.linkedin.com/in/marckoperic/", target="_blank").contact__link-item Linkedin
+					span.contact__link-separator.hidden-sm-down -
+					a(href="https://github.com/marckoperic", target="_blank").contact__link-item.hidden-sm-down GitHub
+					span.contact__link-separator.hidden-sm-down -
+					a(href="mailto:marcko.peric@gmail.com", target="_blank").contact__link-item.hidden-sm-down Email
+				span.contact__copyright.col © 2018 Marko Peric

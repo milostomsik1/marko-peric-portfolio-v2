@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+head
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+	meta(name="description", content="Marko Perić portfolio")
+	meta(name="keywords", content="portfolio, Marko, Perić, about, work")
+	meta(name="author", content="Miloš Tomšik")
+
+	title Marko Perić | Home
+
+	link(rel="stylesheet", href="css/main.css")
+
+body
+	.container-fluid.home-wrapper
+		.container.home
+			header.header.row
+				a.home__logo.bonus-left-padding(href="/index.html")
+					img.home__logo(src="./img/logo.png")
+				input#hamburger.hidden-xs-up(type="checkbox")
+				label.hamburger.hidden-md-up(for="hamburger")
+				label.hamburger__menu
+					a.home__logo.hamburger-padding-logo(href="/index.html")
+						img.home__logo(src="./img/logo.png")
+					div.hamburger__menu-items
+						a.hamburger__menu-item(href="#").active Home
+						a.hamburger__menu-item(href="/about.html") About
+						a.hamburger__menu-item(href="/work.html") Work
+						a.hamburger__menu-item(href="/contact.html") Contact
+					footer.footer.row.hamburger-padding-copyright
+						span.home__copyright.col © 2018 Marko Peric
+
+				nav.nav.col.hidden-sm-down
+					a(href="/about.html").nav-item About
+					a(href="/work.html").nav-item Work
+					a(href="/contact.html").nav-item Contact
+			.row
+				h1.home__headline.col-md-5.col-sm-12 UX UI Designer &amp; travel enthusiast from 
+					span.colored Switzerland
+					| .
+			footer.footer.row
+				.home__links.col
+					a(href="https://dribbble.com/marckoperic", target="_blank").home__link-item Dribbble
+					span.home__link-separator -
+					a(href="https://www.instagram.com/marckonedesign/", target="_blank").home__link-item Instagram
+					span.home__link-separator -
+					a(href="https://www.linkedin.com/in/marckoperic/", target="_blank").home__link-item Linkedin
+					span.home__link-separator.hidden-sm-down -
+					a(href="https://github.com/marckoperic", target="_blank").home__link-item.hidden-sm-down GitHub
+					span.home__link-separator.hidden-sm-down -
+					a(href="mailto:marcko.peric@gmail.com", target="_blank").home__link-item.hidden-sm-down Email
+				span.home__copyright.col © 2018 Marko Peric
+	.home__profile-img.col-5.hidden-sm-down

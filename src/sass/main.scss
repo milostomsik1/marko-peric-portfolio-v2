@@ -1,0 +1,14 @@
+//FONTS
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900");
+@import url("https://fonts.googleapis.com/css?family=Sanchez");
+
+@import "variables";
+@import './node_modules/bootstrap/scss/bootstrap';
+
+//USER FILES
+@import "general";
+@import "home";
+@import "contact";
+@import "about";
+@import "work";

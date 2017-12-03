@@ -1,0 +1,82 @@
+doctype html
+html(lang="en")
+head
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+	meta(name="description", content="Marko Perić portfolio")
+	meta(name="keywords", content="portfolio, Marko, Perić, about, work")
+	meta(name="author", content="Miloš Tomšik")
+
+	title Marko Perić | About
+
+	link(rel="stylesheet", href="css/main.css")
+
+body
+	.container-fluid.about-wrapper
+		.container.about
+			header.header.row
+				a.about__logo.bonus-left-padding(href="/index.html")
+					img.about__logo(src="./img/logo.png")
+				input#hamburger.hidden-xs-up(type="checkbox")
+				label.hamburger.hidden-md-up(for="hamburger")
+				label.hamburger__menu
+					a.about__logo.hamburger-padding-logo(href="/index.html")
+						img.about__logo(src="./img/logo.png")
+					div.hamburger__menu-items
+						a.hamburger__menu-item(href="/index.html") Home
+						a.hamburger__menu-item(href="#").active About
+						a.hamburger__menu-item(href="/work.html") Work
+						a.hamburger__menu-item(href="/contact.html") Contact
+					footer.footer.row.hamburger-padding-copyright
+						span.about__copyright.col © 2018 Marko Peric
+
+			.row
+				.col-md-3.col-sm-12
+					img.about__image(src="./img/about-image.png", alt="Marko Peric image")
+				.about__me.col-md-8.offset-md-1.col-sm-12
+					h2.about__hi Hi,
+					p.about__me I am a 
+						span.colored multidisciplinary designer
+						| , focused on UX UI Design, based in Switzerland. I am a designer with a lot of passion for digital art.
+					p.about__me I can also 
+						span.colored code 
+						| user-friendly interfaces with clean, semantic markup. I love creating user centered, simple, easy to use but efficient websites that solve problems, give great business goals and look awesome.
+					p.about__me My favorite everyday tools are 
+						span.colored Sketch 
+						| and Photoshop, above all I'm advanced in coding HTML, CSS and have a great knowledge in Bootstrap and SASS.
+					p.about__me I genuinely enjoy solving problems through design to aim at a great user experience.
+					a.about_download-cv.colored(href="http://markoperic.bplaced.net/Marko%20Peric%20-%20Resume.pdf", target="_blank") Download CV
+			.row
+				h3.about__services-title.col-md-3.col-sm-12 Services
+				.col-md-8.offset-md-1.col-sm-12
+					p.about__services-description
+						span.colored Design 
+						| - Technology is an integral part of almost every area of our lives, and we need to enjoy it in order to use it. We design digital products for beyond satisfaction to provide enjoyable and meaningful experiences, empowering people to do amazing things.
+					p.about__services-description
+						span.colored Development 
+						| - My main priorities are responsive websites that are effective, have a clean code with cross-browser support and thoroughly testing. Writing clean HTML, separating CSS and implementing Javascript without breaking the code.
+			.row
+				h3.about__experience-title.col-md-3.col-sm-12 Experience
+				.col-md-8.offset-md-1.col-sm-12
+					p.about__experience-description
+						span.colored Nov 2017 
+						| - Present UX UI Designer @ Pexapark AG
+					p.about__experience-description
+						span.colored Oct 2016 
+						| - Present Freelance UX UI Designer
+					p.about__experience-description
+						span.colored Sept 2017 
+						| - Nov 2017 UX UI Designer @ DOS Group SA
+
+			footer.footer.row
+				.about__links.col
+					a(href="https://dribbble.com/marckoperic", target="_blank").about__link-item Dribbble
+					span.about__link-separator -
+					a(href="https://www.instagram.com/marckonedesign/", target="_blank").about__link-item Instagram
+					span.about__link-separator -
+					a(href="https://www.linkedin.com/in/marckoperic/", target="_blank").about__link-item Linkedin
+					span.about__link-separator.hidden-sm-down -
+					a(href="https://github.com/marckoperic", target="_blank").about__link-item.hidden-sm-down GitHub
+					span.about__link-separator.hidden-sm-down -
+					a(href="mailto:marcko.peric@gmail.com", target="_blank").about__link-item.hidden-sm-down Email
+				span.about__copyright.col © 2018 Marko Peric

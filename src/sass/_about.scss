@@ -1,0 +1,187 @@
+.about-wrapper {
+  padding: 0;
+  border: 1.5rem solid $secondary;
+  min-height: 100vh;
+  background-image: url('../img/pattern.png');
+
+  @media (max-width: 767px) {
+    border: none;
+  }
+}
+
+.about {
+  position: relative;
+  z-index: 10;
+
+  display: flex;
+  min-height: calc(100vh - 3rem);
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  margin-bottom: 10rem;
+  padding-top: 3.9rem;
+
+  @media (max-width: 767px) {
+    margin-bottom: 6.5rem;
+    align-items: center;
+  }
+}
+
+.about__logo {
+  height: 5rem;
+  width: auto;
+
+  @media (max-width: 767px) {
+    margin: 0 auto;
+  }
+}
+
+.hamburger {
+  display: flex;
+  margin-right: 1.5rem;
+  width: 24px;
+  height: 24px;
+
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  cursor: pointer;
+  border-bottom: 3px solid $base;
+
+  &::before {
+    width: 100%;
+    display: block;
+    margin-top: 12px;
+    content: "";
+    border-bottom: 3px solid $base;
+  }
+
+  &::after {
+    width: 100%;
+    display: block;
+    margin-top: -12px;
+    content: "";
+    border-bottom: 3px solid $base;
+  }
+
+  &:hover,
+  &:hover:before,
+  &:hover:after {
+    border-color: $primary;
+  }
+}
+
+.nav {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  color: $base;
+  margin-left: 4.2rem;
+
+  &:hover,
+  &:active {
+    color: $primary;
+  }
+
+  &:visited {
+    color: $base;
+  }
+}
+
+.about__hi {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 0.2rem;
+}
+
+.about__image {
+  width: 100%;
+  height: auto;
+
+  @media (max-width: 767px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.about__me,
+.about__services-description {
+  font-family: Sanchez, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 2.4rem;
+}
+
+.about__experience-description {
+  @extend .about__services-description;
+  margin-bottom: 0;
+}
+
+.about_download-cv {
+  display: block;
+  margin-bottom: 5rem;
+
+  font-family: Lato, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+
+}
+
+.about__services-title,
+.about__experience-title {
+  font-weight: 900;
+  text-align: right;
+
+  @media (max-width: 767px) {
+    margin-bottom: 1.6rem;
+
+    font-family: "Playfair Display", Helvetica, sans-serif;
+    font-size: 4.8rem;
+    font-weight: 700;
+    text-align: left;
+  }
+}
+
+
+.footer {
+  padding-top: 10rem;
+  padding-bottom: 4.2rem;
+  flex-wrap: wrap;
+}
+
+.about__links {
+  @media (max-width: 767px) {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+.about__link-item {
+  &:hover,
+  &:active {
+    color: $primary;
+  }
+
+  &:visited {
+    color: $base;
+  }
+}
+
+.about__link-separator {
+  margin: 0 1.2rem;
+}
+
+.about__copyright {
+  color: $base;
+  text-align: right;
+  @media (max-width: 767px) {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 5.3rem;
+  }
+}

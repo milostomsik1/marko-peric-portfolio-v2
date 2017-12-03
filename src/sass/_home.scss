@@ -1,0 +1,119 @@
+.home-wrapper {
+  padding: 0;
+  border: 1.5rem solid $secondary;
+  min-height: 100vh;
+  background-image: url('../img/pattern.png');
+
+  @media (max-width: 767px) {
+    border: none;
+  }
+}
+
+.home {
+  position: relative;
+  z-index: 10;
+
+  display: flex;
+  min-height: calc(100vh - 3rem);
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  padding-top: 3.9rem;
+  @media (max-width: 767px) {
+    align-items: center;
+  }
+}
+
+.home__logo {
+  height: 5rem;
+  width: auto;
+
+  @media (max-width: 767px) {
+    margin: 0 auto;
+  }
+}
+
+.nav {
+  justify-content: flex-end;
+}
+
+.home .nav-item {
+  color: $secondary;
+  margin-left: 4.2rem;
+
+  &:hover,
+  &:active {
+    color: $primary !important;
+  }
+
+  &:visited {
+    color: $secondary;
+  }
+}
+
+.home__headline {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 0.2rem;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.footer {
+  padding-bottom: 4.2rem;
+  flex-wrap: wrap;
+}
+
+.home__links {
+  @media (max-width: 767px) {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+.home__link-item {
+  &:hover,
+  &:active {
+    color: $primary;
+  }
+
+  &:visited {
+    color: $base;
+  }
+}
+
+.home__link-separator {
+  margin: 0 1.2rem;
+}
+
+.home__copyright {
+  color: $secondary;
+  text-align: right;
+  @media (max-width: 767px) {
+    flex-basis: 100%;
+    color: $base;
+    text-align: center;
+    margin-top: 5.3rem;
+  }
+}
+
+.home__profile-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+
+  height: 100%;
+
+  background-image: url("../img/profile-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
