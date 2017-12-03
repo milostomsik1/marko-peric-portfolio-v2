@@ -121,11 +121,10 @@ a {
   width: 100%;
 
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
 
   background-color: $secondary;
-  background-image: url('../img/pattern.png');
 }
 
 .bonus-left-padding {
@@ -134,17 +133,22 @@ a {
   }
 }
 
-.hamburger-padding-logo {
-  padding-top: 3.9rem;
-}
-
-.hamburger-padding-copyright {
+.hamburger-copyright {
+  position: absolute;
+  bottom: 0;
+  padding-left: 3rem;
   padding-top: 0 !important;
   padding-bottom: 7.2rem !important;
+
+  @media (max-height: 500px) {
+    padding-bottom: 7.5vh !important;
+  }
 }
 
-.hamburger__menu-item {
+.hamburger__menu-items {
   display: flex;
+  margin-bottom: 10vh;
+
   flex-direction: column;
   align-items: center;
 }

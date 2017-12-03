@@ -36,41 +36,6 @@
   }
 }
 
-.hamburger {
-  display: flex;
-  margin-right: 1.5rem;
-  width: 24px;
-  height: 24px;
-
-  flex-wrap: wrap;
-  flex-direction: column;
-
-  cursor: pointer;
-  border-bottom: 3px solid $base;
-
-  &::before {
-    width: 100%;
-    display: block;
-    margin-top: 12px;
-    content: "";
-    border-bottom: 3px solid $base;
-  }
-
-  &::after {
-    width: 100%;
-    display: block;
-    margin-top: -12px;
-    content: "";
-    border-bottom: 3px solid $base;
-  }
-
-  &:hover,
-  &:hover:before,
-  &:hover:after {
-    border-color: $primary;
-  }
-}
-
 .nav {
   justify-content: flex-end;
 }
@@ -90,25 +55,29 @@
 }
 
 .work__headline {
+  max-width: 43rem;
+
   font-family: "Playfair Display";
   font-weight: 700;
   line-height: 1.33;
   letter-spacing: 0.2rem;
 
   @media (max-width: 767px) {
-    text-align: center;
+    max-width: auto;
     font-size: 3.6rem !important;
   }
 }
 
 .work__subtitle {
   margin-bottom: 10rem;
+  max-width: 43rem;
 
   font-family: Sanchez, Helvetica, sans-serif;
   font-size: 2rem;
   line-height: 3rem;
 
   @media (max-width: 767px) {
+    max-width: auto;
     margin-bottom: 4.2rem;
   }
 }

@@ -39,41 +39,6 @@
   }
 }
 
-.hamburger {
-  display: flex;
-  margin-right: 1.5rem;
-  width: 24px;
-  height: 24px;
-
-  flex-wrap: wrap;
-  flex-direction: column;
-
-  cursor: pointer;
-  border-bottom: 3px solid $base;
-
-  &::before {
-    width: 100%;
-    display: block;
-    margin-top: 12px;
-    content: "";
-    border-bottom: 3px solid $base;
-  }
-
-  &::after {
-    width: 100%;
-    display: block;
-    margin-top: -12px;
-    content: "";
-    border-bottom: 3px solid $base;
-  }
-
-  &:hover,
-  &:hover:before,
-  &:hover:after {
-    border-color: $primary;
-  }
-}
-
 .nav {
   justify-content: flex-end;
 }
